@@ -45,7 +45,7 @@ def getCDFmin(func):
     return intMin
 
 # Assuming squared images
-def equalizeImage(image: np.ndarray, size: int):
+def equalizeImage(image: np.ndarray, rows: int, cols: int):
     """
 
     Apply the equalization to each pixel of the image
@@ -55,13 +55,12 @@ def equalizeImage(image: np.ndarray, size: int):
     # Stores all the needed values separately in order to make simpler the for cicle
     dctCDF = getCDF(image)
     intMin = getCDFmin(dctCDF)
-    intLSquared = (size)**2
     new_image = image.copy()
 
-    for row in range(size):
-        for col in range(size):
+    for row in range(rows):
+        for col in range(cols):
             pixel = new_image[row][col]
-            new_image[row][col] = int((((dctCDF[pixel] - intMin)*255)/((intLSquared) - intMin)))
+            new_image[row][col] = int((((dctCDF[pixel] - intMin)*255)/((rows*cols) - intMin)))
     return new_image
 
 def processImage():
@@ -73,27 +72,24 @@ def processImage():
     """
 
     # Importing real Image
-    raw_image = im.open('Car.jpg')
+    raw_image = im.open('car.jpeg')
 
     # Get the dimension of the image
-    size = min(raw_image.size)
-
-    # Cropping to get it square // Choose whether to crop or to resize
-    # cropped_image = raw_image.resize((size, size))
-    cropped_image = raw_image.crop((0, 0, size, size))
+    size_m = (raw_image.size)[1]
+    size_n = (raw_image.size)[0]
 
     # Transform it in black and white
-    bw_image = cropped_image.convert('L')
+    bw_image = raw_image.convert('L')
 
     # Getting the matrix associated to the picture
     pixel_matrix = np.array(bw_image.getdata(), dtype=np.uint8)
-    pixel_matrix = np.reshape(pixel_matrix, (size, size))
+    pixel_matrix = np.reshape(pixel_matrix, (size_m, size_n))
 
     # Saving both the processed and unprocessed pictures
     unprocessed_image = im.fromarray(pixel_matrix)
     unprocessed_image.save('Car_unprocessed.png')
 
-    data_processed = equalizeImage(pixel_matrix, size)
+    data_processed = equalizeImage(pixel_matrix, size_m, size_n)
     processed_image = im.fromarray(data_processed)
     processed_image.save('Car_processed.png')
 
