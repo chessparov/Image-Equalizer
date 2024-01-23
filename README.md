@@ -11,6 +11,8 @@ where $CDF(y)$ is the cumulative sum of the all the pixels with the value in the
 
 For a basic demo, check the [demo](/Demo) folder, while for more info check [this wikipedia article](https://en.wikipedia.org/wiki/Histogram_equalization).
 
+**Note:** All the most common formats are accepted and there's not limitation on image size. All images provided will be converted to black and white though.
+
 ## How to run
 Download the files "image-equalizer.py" and "Car.jpg"; then load the first one in your IDE or run it thorugh this coomand in your console:
 
