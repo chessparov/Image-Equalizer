@@ -72,7 +72,7 @@ def processImage():
     """
 
     # Importing real Image
-    raw_image = im.open('car.jpeg')
+    raw_image = im.open('Car.jpg')
 
     # Get the dimension of the image
     size_m = (raw_image.size)[1]
