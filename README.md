@@ -14,10 +14,10 @@ For a basic demo, check the [demo](/Demo) folder, while for more info check [thi
 ## How to run
 Download the files "image-equalizer.py" and "Car.jpg"; then load the first one in your IDE or run it thorugh this coomand in your console:
 
-``python3 image-equalizer.py``
+``$ python3 image-equalizer.py``
 
 Make sure "Car.jpg" is in your project directory and check if you have installed all the packages required. If you are having trouble running through terminal the above command because of missing packages, install them using:
 
-``pip install "package-name"``
+``$ pip install "package-name"``
 
 
