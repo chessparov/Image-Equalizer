@@ -1,0 +1,4 @@
+---- All OS's -----
+
+numpy
+PILs
