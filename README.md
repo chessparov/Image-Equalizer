@@ -12,9 +12,12 @@ where $CDF(y)$ is the cumulative sum of the all the pixel with the value in the 
 For a basic demo, check the [demo](/Demo) folder, while for more info check [this wikipedia article](https://en.wikipedia.org/wiki/Histogram_equalization).
 
 ## How to run
-Download the files image-equalizer.py and Car.jpg and load the first one in your IDE or run it thorugh this coomand in your console:
+Download the files "image-equalizer.py" and "Car.jpg" and load the first one in your IDE or run it thorugh this coomand in your console:
 
 ``python3 image-equalizer.py``
 
-Make sure Car.jpg is in your project directory and check if you have installed all the packages required.
+Make sure "Car.jpg" is in your project directory and check if you have installed all the packages required. If you are having trouble running through terminal the above command because of missing packages, installe them using:
+
+``pip install "package-name"``
+
 
