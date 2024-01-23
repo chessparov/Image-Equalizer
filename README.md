@@ -1,4 +1,4 @@
-# Image histogram Equalization
+# Image Histogram Equalization
 Histogram equalization is a method used in image analysis for enhancing and make easier to read difficult images. 
 It's usually associated with an increase in contrast.
 
