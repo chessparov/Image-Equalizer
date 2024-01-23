@@ -9,7 +9,7 @@ $$<math>\displaystyle y{'} = \frac {CDF(y) − CDFmin} {L^2 - CDFmin} \cdot255</
 
 where $CDF(y)$ is the cumulative sum of the all the pixel with the value in the domain $x \in [0, y]$ and $y$ is the pixel value.
 
-For a basic demo, check the [Demo](/Demo) folder, while for more info check [this wikipedia article](https://en.wikipedia.org/wiki/Histogram_equalization).
+For a basic demo, check the [demo](/Demo) folder, while for more info check [this wikipedia article](https://en.wikipedia.org/wiki/Histogram_equalization).
 
 ## How to run
 Download the files image-equalizer.py and Car.jpg and load the first one in your IDE or run it thorugh this coomand in your console:
