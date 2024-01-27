@@ -14,7 +14,7 @@ For a basic demo, check the [demo](/Demo) folder, while for more info check [thi
 **Note:** All the most common formats are accepted and there's not limitation on image size. All images provided will be converted to black and white though.
 
 ## How to run
-Download the files "image-equalizer.py" and "Car.jpg"; then load the first one in your IDE or run it thorugh this coomand in your console:
+Download the files "image-equalizer.py" and "test_image.JPG"; then load the first one in your IDE or run it thorugh this coomand in your console:
 
 ``$ python3 image-equalizer.py``
 
