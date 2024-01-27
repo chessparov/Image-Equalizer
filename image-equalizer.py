@@ -72,7 +72,7 @@ def processImage():
     """
 
     # Importing real Image
-    raw_image = im.open('Car.jpg')
+    raw_image = im.open('test_image.JPG')
 
     # Get the dimension of the image
     size_m = (raw_image.size)[1]
@@ -87,11 +87,11 @@ def processImage():
 
     # Saving both the processed and unprocessed pictures
     unprocessed_image = im.fromarray(pixel_matrix)
-    unprocessed_image.save('Car_unprocessed.png')
+    unprocessed_image.save('test_image_unprocessed.png')
 
     data_processed = equalizeImage(pixel_matrix, size_m, size_n)
     processed_image = im.fromarray(data_processed)
-    processed_image.save('Car_processed.png')
+    processed_image.save('test_image_processed.png')
 
     # Show the results
     unprocessed_image.show()
