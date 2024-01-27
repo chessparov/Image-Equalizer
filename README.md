@@ -18,7 +18,7 @@ Download the files "image-equalizer.py" and "test_image.JPG"; then load the firs
 
 ``$ python3 image-equalizer.py``
 
-Make sure "Car.jpg" is in your project directory and check if you have installed all the packages required. If you are having trouble running through terminal the above command because of missing packages, install them using:
+Make sure "test_image.JPG" is in your project directory and check if you have installed all the packages required. If you are having trouble running through terminal the above command because of missing packages, install them using:
 
 ``$ pip install "package-name"``
 
